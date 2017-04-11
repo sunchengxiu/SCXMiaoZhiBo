@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target '仿喵直播' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+ pod 'Masonry', '~> 1.0.2’
+pod 'MBProgressHUD', '~> 1.0.0’
+pod 'SDWebImage', '~> 4.0.0’
+ pod 'MJRefresh', '~> 3.1.12’
+pod 'MJExtension', '~> 3.0.13'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'BarrageRenderer', '~> 1.9.1'
+pod 'LFLiveKit', '~> 2.6'
+  # Pods for 仿喵直播
+
+  target '仿喵直播Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target '仿喵直播UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

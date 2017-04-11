@@ -1,0 +1,78 @@
+
+//
+//  PrefixHeader.pch
+//  仿喵直播
+//
+//  Created by 孙承秀 on 2017/3/3.
+//  Copyright © 2017年 孙承秀. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#pragma mark ------------- 头文件导入 -------------
+
+#import <masonry.h>
+
+#import "single.h"
+
+#import <IJKMediaFramework/IJKMediaFramework.h>
+
+#import "UIButton+Extension.h"
+
+#import "UIView+Frame.h"
+
+#import "UIImage+Extension.h"
+
+//#import <MBProgressHUD.h>
+
+#import "MBProgressHUD+MJ.h"
+
+#import <UIImageView+WebCache.h>
+
+#import "NSString+MD5.h"
+
+#import <MJRefresh.h>
+
+#import <MJExtension.h>
+
+#import <AFHTTPSessionManager.h>
+
+#import <MJRefresh.h>
+
+#import "UIView+Frame.h"
+
+#import "SCXStaticStringFile.h"
+
+#import "SCXNetWorkHelp.h"
+
+#import "SCXUtil.h"
+
+#import <BarrageRenderer.h>
+
+#import <LFLiveKit.h>
+
+#import "UIDevice+Extension.h"
+
+#pragma mark ------------------ 宏定义 --------------------
+
+#define Color(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+
+
+
+#define BasicColor Color(214, 41, 117)
+
+#define kCommonBlackColor [UIColor colorWithRed:0.17f green:0.23f blue:0.28f alpha:1.00f]
+
+#define kCommonHighLightRedColor [UIColor colorWithRed:1.00f green:0.49f blue:0.65f alpha:1.00f]
+
+#define BasicLightGrayColor [UIColor colorWithRed:180 / 255.0 green:180 / 255.0 blue:180 / 255.0 alpha:0.5]
+
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+
+#define ScreenH [UIScreen mainScreen].bounds.size.height
+
+
+#define SCXWeakSlef(weakName) autoreleasepool{} __weak typeof(weakName) weak##weakName = weakName;
+
+#define SCXStrongSelf(strongName) autoreleasepool{} __strong typeof(strongName) strong##strongName =  weak##strongName
+#endif /* PrefixHeader_pch */
